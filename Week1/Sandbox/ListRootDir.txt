@@ -1,0 +1,20 @@
+My first line. cat test.txt echo My second line ls / cat ListRootDir.txt
+My first line. cat test.txt echo My second line ls / cat ListRootDir.txt
+Applications
+Library
+Network
+System
+Users
+Volumes
+bin
+cores
+dev
+etc
+home
+installer.failurerequests
+net
+private
+sbin
+tmp
+usr
+var
