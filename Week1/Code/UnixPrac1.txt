@@ -1,0 +1,10 @@
+#1
+wc -l ../Data/fasta/*.fasta
+#2
+tail -n +2 ../Data/fasta/E.coli.fasta
+#3
+tail -n +2 ../Data/fasta/E.coli.fasta | wc -c
+#4
+grep -o ATCG ../Data/fasta/E.coli.fasta | wc -l
+#5
+echo "scale=3;$(grep -o "A\|T" ../Data/fasta/E.coli.fasta | wc -l)/$(grep -o "C\|G" ../Data/fasta/E.coli.fasta | wc -l)" |bc
