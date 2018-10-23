@@ -43,7 +43,7 @@ update in Week3
 #############
 
 #1 content
-The Week3's homework, containing all week2 script and data file and result.
+The Week3's homework, containing all week3's script and data file and result.
 
 #2 Example usage
 Rscript get_TreeHeight.R
