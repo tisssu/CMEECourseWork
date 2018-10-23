@@ -4,7 +4,7 @@
 # Desc: compile the latex file
 # Argument: 1->compiled file
 # Date: Oct 2018 
-#!/bin/bash
+
 pdflatex $1.tex
 pdflatex $1.tex
 bibtex $1

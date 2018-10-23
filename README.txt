@@ -37,3 +37,19 @@ Run under linux or macos
 
 #4 Version
 1.10 , second version 
+
+##############
+update in Week3
+#############
+
+#1 content
+The Week3's homework, containing all week2 script and data file and result.
+
+#2 Example usage
+Rscript get_TreeHeight.R
+
+#3 Environment
+R 3.5.1, python 3.7.0
+
+#4 Version
+1.20 , the third version.
