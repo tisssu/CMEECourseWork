@@ -108,4 +108,12 @@ script: next.R
 function: test next command in R
 ##################
 
+#################
+script: compile_TAutoCorr.sh
+function: complie the TAutoCorr.tex into pdf file
+##################
 
+#################
+script: TAutoCorr.tex
+function: result and interpretation of TAutoCorr.R in latex file
+##################

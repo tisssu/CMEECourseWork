@@ -1,58 +1,8 @@
-\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
-%% maxwidth is the original width if it is less than linewidth
-%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
-\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
-\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
-\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
-\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
-\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
-\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
-\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-\let\hlipl\hlkwb
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
-
-\usepackage{alltt}
+\documentclass{article}
 \title{Autocorrelation in Weather}
 \author{Wang YuHeng}
 \date{23/10/2018}
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
 \begin{document}
   \maketitle
   
@@ -61,53 +11,10 @@
   \end{abstract}
 
   \section{Materials \& Methods}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{load}\hlstd{(}\hlstr{"../Data/KeyWestAnnualMeanTemperature.Rdata"}\hlstd{)}
-\hlkwd{attach}\hlstd{(ats)}
-\hlkwd{plot}\hlstd{(ats)}
-\end{alltt}
-\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-1-1} 
-\begin{kframe}\begin{alltt}
-\hlcom{#calculate the successive correlation}
-\hlstd{r_successive} \hlkwb{=} \hlkwd{cor}\hlstd{(Temp[}\hlnum{1}\hlopt{:}\hlnum{99}\hlstd{],Temp[}\hlnum{2}\hlopt{:}\hlnum{100}\hlstd{])}
 
-\hlcom{# calculate the random permutation correlation}
-\hlkwd{set.seed}\hlstd{(}\hlnum{001}\hlstd{)}
-\hlstd{r_random} \hlkwb{=} \hlkwd{rep}\hlstd{(}\hlnum{NA}\hlstd{,} \hlnum{10000}\hlstd{)}
-\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlkwd{length}\hlstd{(r_random))}
-\hlstd{\{}
-  \hlstd{random_yearTemp} \hlkwb{=} \hlkwd{sample}\hlstd{(Temp,} \hlkwd{length}\hlstd{(Year),} \hlkwc{replace} \hlstd{=} \hlnum{FALSE}\hlstd{)}
-  \hlstd{r_random[i]} \hlkwb{=} \hlkwd{cor}\hlstd{(random_yearTemp[}\hlnum{1}\hlopt{:}\hlnum{99}\hlstd{],random_yearTemp[}\hlnum{2}\hlopt{:}\hlnum{100}\hlstd{])}
-\hlstd{\}}
-
-\hlstd{p_position}\hlkwb{=}\hlnum{0}
-\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlkwd{length}\hlstd{(r_random))}
-\hlstd{\{}
-  \hlkwa{if} \hlstd{(r_successive}\hlopt{<}\hlstd{r_random[i])}
-  \hlstd{\{}
-    \hlstd{p_position} \hlkwb{=} \hlstd{p_position}\hlopt{+}\hlnum{1}
-  \hlstd{\}}
-\hlstd{\}}
-\hlstd{p_value} \hlkwb{=} \hlstd{p_position}\hlopt{/}\hlkwd{length}\hlstd{(r_random)}
-
-\hlstd{hist_correlation}\hlkwb{=}\hlkwd{hist}\hlstd{(r_random,} \hlkwc{probability} \hlstd{= T)}
-\end{alltt}
-\end{kframe}
-\includegraphics[width=\maxwidth]{figure/unnamed-chunk-1-2} 
-\begin{kframe}\begin{alltt}
-\hlkwd{print} \hlstd{(p_value)}
-\end{alltt}
-\begin{verbatim}
-## [1] 4e-04
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
   \begin{equation}
-    p_value = 4e-4
+    pvalue = 4e-4
   \end{equation}
   \section{Conclusion}
-    The possibility that temperatures of one year are significantly correlated with the next year is 99.96 of one      hundred percent, thus temperatures of one year and next year have significant correlation.
+    The possibility that temperatures of one year are significantly correlated with the next year is 99.96 of one hundred percent, thus temperatures of one year and next year have significant correlation.
 \end{document}
