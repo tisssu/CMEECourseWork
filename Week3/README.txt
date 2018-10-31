@@ -117,3 +117,23 @@ function: complie the TAutoCorr.tex into pdf file
 script: TAutoCorr.tex
 function: result and interpretation of TAutoCorr.R in latex file
 ##################
+
+################
+script: Girko.R
+function: test Girko's circus law
+##################
+
+#################
+script: PlotLin.R
+function: plot regression
+##################
+
+#################
+script: PP_Lattice.R
+function: plot lattice graphics
+##################
+
+#################
+script: PP_Regress.R
+function: plot certain regression
+##################
