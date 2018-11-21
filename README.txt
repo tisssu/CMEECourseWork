@@ -53,3 +53,19 @@ R 3.5.1, python 3.7.0
 
 #4 Version
 1.20 , the third version.
+
+##############
+update in Week7
+#############
+
+#1 content 
+The week7's assignment, containing all week7's script and data file and result. And part of miniproject.
+
+#2 Example usage
+python3 TestR.py
+
+#3 Environment
+R 3.5.1, python 3.7.0
+
+#4 Version
+1.30 , the forth version.
