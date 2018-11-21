@@ -1,11 +1,11 @@
 #################
 script: LV1.py
-function: do integrate in the Lotka_Volterra model and plot the relation between consumer and resource
+function: runs Lotka_Volterra model and plot the population density in consumer and resource
 #################
 
 ################
 script: LV2.py
-function: runs Lotka-Volterra model with prey density dependence and plot the relation between consumer and resource
+function: runs Lotka-Volterra model with prey density dependence and plot population density in consumer and resource
 #################
 
 ################
@@ -25,7 +25,7 @@ function: profile some function for comparasion
 
 ################
 script: DrawFW.py
-function: comstract a food web and plot it
+function: contruct a food web and plot it
 #################
 
 ################
@@ -40,7 +40,7 @@ function: run LV1, LV2 and profile them
 
 #################
 script:testR.R testR.py
-function: test using R in python
+function: test running R in python
 ##################
 
 #################
