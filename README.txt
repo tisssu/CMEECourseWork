@@ -68,4 +68,4 @@ python3 TestR.py
 R 3.5.1, python 3.7.0
 
 #4 Version
-1.30 , the forth version.
+1.30 , the fourth version.
