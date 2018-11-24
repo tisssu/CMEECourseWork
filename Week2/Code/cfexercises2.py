@@ -8,18 +8,19 @@ __version__ ='0.0.1'
 
 import sys
 
-"""square x"""
 def foo_1(x):
+    """square x"""
     return x ** 0.5 
 
-"""find the larger one in x,y"""
+
 def foo_2(x, y):
+    """find the larger one in x,y"""
     if x > y:
         return x
     return y
 
-"""making the number inpute a increasing sequence"""
 def foo_3(x, y, z):
+    """making the number inpute a increasing sequence"""
     if x > y:
         tmp = y
         y = x
@@ -30,21 +31,21 @@ def foo_3(x, y, z):
         y = tmp
     return [x, y, z]
 
-"""calculating the factorial of x"""
 def foo_4(x):
+    """calculating the factorial of x"""
     result = 1
     for i in range(1, x + 1):
         result = result * i
     return result
 
-"""calculating the factorial of x recursively"""
 def foo_5(x): # a recursive function
+    """calculating the factorial of x recursively"""
     if x == 1:
         return 1
     return x * foo_5(x - 1)
 
-"""Calculate the factorial of x in a different way"""
 def foo_6(x): # Calculate the factorial of x in a different way
+    """Calculate the factorial of x in a different way"""
     facto = 1
     while x >= 1:
         facto = facto * x
@@ -55,6 +56,7 @@ def foo_6(x): # Calculate the factorial of x in a different way
 
 
 def main(argv):
+    """ run all the function """
     print(foo_1(4))
     print(foo_1(3))
     print(foo_2(5,3))

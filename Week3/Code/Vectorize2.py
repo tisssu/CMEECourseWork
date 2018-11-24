@@ -4,6 +4,7 @@ Author Wang YuHeng (yuheng.wang18@imperial.ac.uk)"""
 import math
 import numpy
 def stochrick(p0 = numpy.random.uniform(0.5,1.5,size=1000),r=1.2,K=1,sigma=0.2,numyears=100):
+    """ Test vectorization """
     N = numpy.empty((numyears,len(p0)))
     N[1,] = p0
     for pop in range(1,len(p0)):
@@ -15,6 +16,7 @@ def stochrick(p0 = numpy.random.uniform(0.5,1.5,size=1000),r=1.2,K=1,sigma=0.2,n
 import math
 import numpy
 def stochrickvect(p0 = numpy.random.uniform(0.5,1.5,size=1000),r=1.2,K=1,sigma=0.2,numyears=100):
+    """ test vectorization """
     N = numpy.empty((numyears,len(p0)))
     N[1,] = p0
     for yr in range(2,numyears):

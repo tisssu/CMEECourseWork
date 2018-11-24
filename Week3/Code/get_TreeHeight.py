@@ -20,6 +20,7 @@ import os
 
 # define the function to calculating the tree height
 def TreeHeight(degrees, distance):
+    """ calculate tree height """
     radians = degrees * math.pi / 180
     height = distance * math.tan(radians)
     print("Tree height is:", height)

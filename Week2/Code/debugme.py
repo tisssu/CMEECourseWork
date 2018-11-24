@@ -4,6 +4,7 @@ Author: Wang YuHeng (yuheng.wang18@imperial.ac.uk) '''
 
 
 def createabug(x):
+    """ debug """
     y = x**4
     # creat a bug
     z = 0.

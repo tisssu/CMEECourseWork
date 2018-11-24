@@ -6,6 +6,7 @@ import numpy
 import time
 M = numpy.random.uniform(0,1,size=[1000,1000])
 def SumALLElements(M):
+    """ test vectorization """
     ToT =0
     for i in range(0,M.shape[0]):
         for j in range(0,M.shape[1]):

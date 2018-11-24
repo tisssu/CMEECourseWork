@@ -25,6 +25,7 @@ else:
 # A function that computes a score by returning the number of matches starting
 # from arbitrary startpoint (chosen by user)
 def calculate_score(s1, s2, l1, l2, startpoint):
+    """ Align sequence """
     matched = "" # to hold string displaying alignements
     score = 0
     for i in range(l2):
