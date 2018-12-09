@@ -1,0 +1,6 @@
+rm(list = ls())
+graphics.off()
+library(lme4)
+require(lme4)
+exp(1)
+d<-read.table("../Data/SparrowSize.txt", header=TRUE)

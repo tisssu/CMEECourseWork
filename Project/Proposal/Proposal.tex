@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\linespread{1.5}
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+\usepackage{geometry}
+\usepackage{tabu}
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,open={(},close={)}}
+\geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm}
+\font\myfont=cmr12 at 30pt
+\title{\myfont Artificial intelligence approaches to optimising segmentation in computed tomography data processing}
+\author{Wang YuHeng }
+\date{December 2018}
+\usepackage{natbib}
+\usepackage{graphicx}
+\begin{document}
+\maketitle
+\begin{center}
+\vspace{4.8cm}
+Supervisor: DR. MARTIN D. BRAZEAU 
+\\
+Affliation: Faculty of Natural Sciences, Department of Life Sciences (Silwood Park)
+\\
+Email: m.brazeau@imperial.ac.uk
+\\
+\vspace{1.5cm}
+Supervisor: DR. MATTEO FUMAGALLI 
+\\
+Affliation: Faculty of Natural Sciences, Department of Life Sciences (Silwood Park)
+\\
+Email: m.fumagalli@imperial.ac.uk
+\end{center}
+\newpage
+
+
+\section{Key words}
+Computed Tomography; Segmentation; Fossil; Artificial Intelligence; Deep Learning; Convolutional Neural Networks
+
+\section{Introduction}
+Computed tomography(CT) is now widely used in palaeontology to study fossils. It can produce 3D virtual model of fossils from 2D x-ray images. It is a non-destructive method and needs little or no sample preparation\citep{Dierick2007}. With great improvement of CT technology, the bottleneck of CT-based analyses transfers from scanning to data processing\citep{Abel2012}. The first step of data processing is segmentation, which means partitioning of an image into non-overlapping, constituent regions that are homogeneous with respect to some characteristic such as intensity or texture\citep{doi:10.1146/annurev.bioeng.2.1.315}. Traditional segmentation includes four steps: contrast enhancement; surface determination; region growing and masking tools\citep{Abel2012}. During the procedure of segmentation, manual selections (and therefore subjectivity and error) are inevitable and time-consuming because of the diminishing image contrast at the junction of fossil and matrix. As a consequence, following steps like rendering are easily influenced and tend to be challenging and error-prone.
+In this project, we prepare to use artificial intelligence(AI) based techniques to optimise the process of segmentation in fossil CT image data. Classifier and clustering are relatively mature machine learning techniques used in image segmentation, where Markov random field models(MRF) is often incorporated into them\citep{doi:10.1146/annurev.bioeng.2.1.315}. Classifier is a supervised method which can be parametric or nonparametric while clustering is unsupervised. Currently, deep learning is the most popular machine learning method, where convolutional neural network(CNN) is most commonly applied in image processing. CNN is designed to process data in the form of multiple arrays like image data, containing convolutional layers and pooling layers as its unique structure\citep{Lecun2015}. It has advantages in processing label-abundant data including the segmentation of biological images\citep{Ning2005}.
+Due to the superiority of AI, especially CNN, in image processing, we prepare to use these techniques to replace manual selection. We expect it will address the problem of time consumption and error during segmentation to some extent.
+ 
+\section{Methods:}
+ We will use ‘off-the-shelf’ AI frameworks like TensorFlow. We use an iterative approach. We will initially attempt to train AI algorithms to segment ‘easy’ datasets with very good contrast. These will include specimens of non-fossil material, or fossil material that has been chemically prepared and has no surrounding rock matrix. We will then further improve on our methods by adapting them for fossils that have surrounding rock matrix, but nonetheless have good contrast. From here, we will make further refinements to try to adapt the methods to more problematic datasets where contrast is poorly normalised.
+\section{Anticipated outputs and outcomes}
+The results of this project will be compared with current “semi-automated” methods to see if it improves efficiency, quality or accuracy in process of segmentation.
+\section{Timetable}
+
+
+\begin{tabu} to \hsize {|X|X[3,l]|}
+\hline
+12/2018-02/2019 & Studying deep learning and other basic knowledge; Reading literature about segmentation and convolutional neural net work; Writing the introduction of thesis. \\ \hline
+02/2019-05/2019 & Testing AI-based techniques in simple model; Replicating others algorithm to check the feasibility; Comparing results with traditional methods; Trying to optimise the algorithm and parameter. \\ \hline
+05/2019-07/2019 &  Testing new algorithm in more complex model and optimise the parameter and structure of neural network; Comparing results with traditional methods; Writing the methods part of thesis. \\ \hline
+07/2019-09/2019 & Finishing the thesis about results and discussion; Polishing the thesis and correcting the mistake. \\
+\hline
+\end{tabu}
+
+\section{Budget}
+\begin{tabu} to \hsize {|X|X|}
+\hline
+Lab equipment(CT scanning) & $\pounds$200 \\ \hline
+High performance computing time & $\pounds$150 \\ \hline
+Cost of support stuff(interpreters, translators, transcribers) & $\pounds$150 \\ \hline
+Total & $\pounds$500 \\
+\hline
+\end{tabu}
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{references}
+\newpage
+\LARGE
+“I have seen and approved the proposal and the budget”
+\\
+Name: DR. MARTIN D. BRAZEAU
+\\
+Date: 09/12/2018
+\\
+\vspace{2cm}
+\\
+Signature:
+\end{document}

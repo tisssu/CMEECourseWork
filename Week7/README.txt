@@ -62,3 +62,13 @@ function: run fmr.R in python
 script:regex.py
 function: practise regex
 #################
+
+#################
+script:Nets.R
+function: This script visualizes the QMEE CDT collaboration network, coloring the the nodes by the type of node (organization type: "University","Hosting Partner", "Non-hosting Partner"
+#################
+
+#################
+script:Nets.py
+function: convert Nets.R to python script
+#################
