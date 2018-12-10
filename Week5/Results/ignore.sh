@@ -1,8 +1,8 @@
 #!/bin/bash
 # Author: Wang YuHeng yuheng.wang18@imperial.ac.uk
 # Script: ignore
-# Desc: ignore files larger than 35mb
+# Desc: ignore file larger than 35mb in results
 # Argument: none
-# Date: Oct 2018 
+# Date: Dec 2018 
 
 find . -size +35M | cat >> .gitignore
