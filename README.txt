@@ -86,8 +86,8 @@ update in Week10
 
 5. add HPC exercises to this repository
 
-#3 Environment
+#2 Environment
 R 3.5.1, python 3.7.0, QGIS 3.41
 
-#4 Version
+#3 Version
 1.40 , the fifth version.
