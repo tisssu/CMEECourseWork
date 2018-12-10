@@ -5,4 +5,4 @@
 # Argument: none
 # Date: Dec 2018 
 
-find ../Results . -size +35M | cat >> .gitignore
+find . -size +35M | cat >> .gitignore
