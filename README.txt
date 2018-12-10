@@ -69,3 +69,25 @@ R 3.5.1, python 3.7.0
 
 #4 Version
 1.30 , the fourth version.
+
+##############
+update in Week10
+#############
+
+#1 content (This is the last version of coursework except miniproject and HPC exercises)
+
+1. add project proposal
+
+2. add one extra credit problem in week7
+
+3. move things in week4,5 to this repository
+
+4. add mini project to this repository
+
+5. add HPC exercises to this repository
+
+#3 Environment
+R 3.5.1, python 3.7.0, QGIS 3.41
+
+#4 Version
+1.40 , the fifth version.

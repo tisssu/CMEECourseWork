@@ -1,4 +1,4 @@
 ##############
 haha, nothings here
 #################
-all of the program were run in virtual machine
+all of the genomic week's program were run in virtual machine
