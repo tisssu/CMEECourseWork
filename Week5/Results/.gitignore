@@ -1,5 +1,7 @@
-./CORINE_2K.shx
-./CORINE_2k_Multi.dbf
+./Modis_NIR_reflectance_UTM50N.tif
 ./Modis_blue_reflectance_UTM50N.tif
-./bio1_merge.tif
+./CORINE_2K.dbf
 ./g250_06_UK_BNG.tif
+./Modis_red_reflectance_UTM50N.tif
+./CORINE_2k_Multi.dbf
+./bio1_merge.tif
