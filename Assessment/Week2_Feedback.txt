@@ -9,11 +9,11 @@ Note that:
 
 ======================================================================
 ======================================================================
-Your Git repo size this week is about 1.57 MiB on disk 
+Your Git repo size this week is about 99.61 MiB on disk 
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week1, Assessment, Week2, .git, Week3
+Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week8, Week5, Week2, Week9, Week4, .git, Week3, Project
 
 Found the following files in parent directory: README.txt, .gitignore
 
@@ -333,6 +333,57 @@ TSWLatexianTemp*
 # End of https://www.gitignore.io/api/latex
 
 
+
+
+
+
+# Created by https://www.gitignore.io/api/r
+
+### R ###
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+/*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
+rsconnect/
+
+### R.Bookdown Stack ###
+# R package: bookdown caching files
+/*_files/
+
+
+# End of https://www.gitignore.io/api/r
+
 **********************************************************************
 
 Found README in parent directory, named: README.txt
@@ -377,12 +428,66 @@ python3 align_seqs_better.py
 Run under linux or macos
 
 #4 Version
-1.10 , second version **********************************************************************
+1.10 , second version 
+
+##############
+update in Week3
+#############
+
+#1 content
+The Week3's homework, containing all week3's script and data file and result.
+
+#2 Example usage
+Rscript get_TreeHeight.R
+
+#3 Environment
+R 3.5.1, python 3.7.0
+
+#4 Version
+1.20 , the third version.
+
+##############
+update in Week7
+#############
+
+#1 content 
+The week7's assignment, containing all week7's script and data file and result. And part of miniproject.
+
+#2 Example usage
+python3 TestR.py
+
+#3 Environment
+R 3.5.1, python 3.7.0
+
+#4 Version
+1.30 , the fourth version.
+
+##############
+update in Week10
+#############
+
+#1 content (This is the last version of coursework except miniproject and HPC exercises)
+
+1. add project proposal
+
+2. add one extra credit problem in week7
+
+3. move things in week4,5 to this repository
+
+4. add mini project to this repository
+
+5. add HPC exercises to this repository
+
+#2 Environment
+R 3.5.1, python 3.7.0, QGIS 3.41
+
+#3 Version
+1.40 , the fifth version.**********************************************************************
 
 ======================================================================
 Looking for the weekly directories...
 
-Found 3 weekly directories: Week1, Week2, Week3
+Found 9 weekly directories: Week1, Week2, Week3, Week4, Week5, Week6, Week7, Week8, Week9
 
 The Week2 directory will be assessed 
 
@@ -607,7 +712,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.01446s
+Time consumed = 0.03252s
 
 ======================================================================
 Inspecting script file boilerplate.py...
@@ -657,7 +762,7 @@ This is a boilerplate
 
 Code ran without errors
 
-Time consumed = 0.01217s
+Time consumed = 0.03318s
 
 ======================================================================
 Inspecting script file basic_csv.py...
@@ -708,21 +813,21 @@ Output (only first 500 characters):
 
 **********************************************************************
 ['Species', 'Infraorder', 'Family', 'Distribution', 'Body mass male (Kg)']
-('The species is', 'Species')
+The species is Species
 ['Daubentonia_madagascariensis', 'Chiromyiformes ', 'Daubentoniidae', 'Madagascar', '2.7']
-('The species is', 'Daubentonia_madagascariensis')
+The species is Daubentonia_madagascariensis
 ['Allocebus_trichotis', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.1']
-('The species is', 'Allocebus_trichotis')
+The species is Allocebus_trichotis
 ['Avahi_laniger', 'Lemuriformes', 'Indridae', 'America', '1.03']
-('The species is', 'Avahi_laniger')
-['Avahi_occidentalis', 'Lemurifo
+The species is Avahi_laniger
+['Avahi_occidentalis', 'Lemuriformes', 'Indridae', 'Madagasc
 **********************************************************************
 
 Encountered error:
 Traceback (most recent call last):
   File "basic_csv.py", line 21, in <module>
     f = open('../data/testcsv.csv','r')
-IOError: [Errno 2] No such file or directory: '../data/testcsv.csv'
+FileNotFoundError: [Errno 2] No such file or directory: '../data/testcsv.csv'
 
 ======================================================================
 Inspecting script file cfexercises2.py...
@@ -739,18 +844,19 @@ __version__ ='0.0.1'
 
 import sys
 
-"""square x"""
 def foo_1(x):
+    """square x"""
     return x ** 0.5 
 
-"""find the larger one in x,y"""
+
 def foo_2(x, y):
+    """find the larger one in x,y"""
     if x > y:
         return x
     return y
 
-"""making the number inpute a increasing sequence"""
 def foo_3(x, y, z):
+    """making the number inpute a increasing sequence"""
     if x > y:
         tmp = y
         y = x
@@ -761,21 +867,21 @@ def foo_3(x, y, z):
         y = tmp
     return [x, y, z]
 
-"""calculating the factorial of x"""
 def foo_4(x):
+    """calculating the factorial of x"""
     result = 1
     for i in range(1, x + 1):
         result = result * i
     return result
 
-"""calculating the factorial of x recursively"""
 def foo_5(x): # a recursive function
+    """calculating the factorial of x recursively"""
     if x == 1:
         return 1
     return x * foo_5(x - 1)
 
-"""Calculate the factorial of x in a different way"""
 def foo_6(x): # Calculate the factorial of x in a different way
+    """Calculate the factorial of x in a different way"""
     facto = 1
     while x >= 1:
         facto = facto * x
@@ -786,6 +892,7 @@ def foo_6(x): # Calculate the factorial of x in a different way
 
 
 def main(argv):
+    """ run all the function """
     print(foo_1(4))
     print(foo_1(3))
     print(foo_2(5,3))
@@ -815,7 +922,7 @@ Output (only first 500 characters):
 
 **********************************************************************
 2.0
-1.73205080757
+1.7320508075688772
 5
 [1, 2, 4]
 24
@@ -829,7 +936,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.02226s
+Time consumed = 0.03494s
 
 ======================================================================
 Inspecting script file align_seqs_better.py...
@@ -860,6 +967,7 @@ else:
 # A function that computes a score by returning the number of matches starting
 # from arbitrary startpoint (chosen by user)
 def calculate_score(s1, s2, l1, l2, startpoint):
+    """ Align sequence """
     matched = "" # to hold string displaying alignements
     score = 0
     for i in range(l2):
@@ -921,14 +1029,59 @@ Found one or more doctrings!
 Output (only first 500 characters): 
 
 **********************************************************************
-
+-----*****
+CAATTCGGAT
+ATCGCCGGATTACGGG
+5
+ 
+.------*--*
+.CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+..*---------
+..CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+...--------*-
+...CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+....*---------
+....CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+.....*---*-----
+.....CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+......--***--*--
+......CAATTCGGAT
+ATCGCCGGATTACGGG
+4
+ 
+.......-*-*-***-
+.......CAATTCGGAT
+ATCGCCGGATTACGGG
+5
+ 
+........------**
+........CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+.........--*---*
+.........CAATTCGGAT
+ATCGCCGG
 **********************************************************************
 
-Encountered error:
-  File "align_seqs_better.py", line 69
-    print(result[0]+"\n"+result[1]+"\n"+"Best score:", result[2],"\n", file =f)
-                                                                            ^
-SyntaxError: invalid syntax
+Code ran without errors
+
+Time consumed = 0.02957s
 
 ======================================================================
 Inspecting script file dictionary.py...
@@ -998,13 +1151,13 @@ Found one or more doctrings!
 Output (only first 500 characters): 
 
 **********************************************************************
-{'Rodentia': ['Gerbillus henleyi', 'Peromyscus crinitus', 'Mus domesticus', 'Cleithrionomys rutilus'], 'Afrosoricida': ['Microgale dobsoni', 'Microgale talazaci'], 'Chiroptera': ['Myotis lucifugus'], 'Carnivora': ['Lyacon pictus', 'Arctocephalus gazella', 'Canis lupus']}
+{'Carnivora': ['Lyacon pictus', 'Arctocephalus gazella', 'Canis lupus'], 'Rodentia': ['Gerbillus henleyi', 'Peromyscus crinitus', 'Mus domesticus', 'Cleithrionomys rutilus'], 'Afrosoricida': ['Microgale dobsoni', 'Microgale talazaci'], 'Chiroptera': ['Myotis lucifugus']}
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.01497s
+Time consumed = 0.03330s
 
 ======================================================================
 Inspecting script file debugme.py...
@@ -1017,6 +1170,7 @@ Author: Wang YuHeng (yuheng.wang18@imperial.ac.uk) '''
 
 
 def createabug(x):
+    """ debug """
     y = x**4
     # creat a bug
     z = 0.
@@ -1031,23 +1185,20 @@ Testing debugme.py...
 debugme.py is a Python script file;
  checking for docstrings...
 
-Found no doctrings!
-1 pt deducted
-
-Current Points = 99
+Found one or more doctrings!
 
 Output (only first 500 characters): 
 
 **********************************************************************
-]0;IPython: Week2/Code> [0;32m/home/mhasoba/Documents/Teaching/IC_CMEE/2018-19/Coursework/StudentRepos/YuhengWang_YW918/Week2/Code/debugme.py[0m(11)[0;36mcreateabug[0;34m()[0m
-[0;32m      9 [0;31m    [0mz[0m [0;34m=[0m [0;36m0.[0m[0;34m[0m[0m
-[0m[0;32m     10 [0;31m    [0;32mimport[0m [0mipdb[0m[0;34m;[0m [0mipdb[0m[0;34m.[0m[0mset_trace[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
-[0m[0;32m---> 11 [0;31m    [0my[0m [0;34m=[0m [0my[0m[0;34m/[0m[0mz[0m[0
+]0;IPython: Week2/Code> [0;32m/home/mhasoba/Documents/Teaching/IC_CMEE/2018-19/Coursework/StudentRepos/YuhengWang_YW918/Week2/Code/debugme.py[0m(12)[0;36mcreateabug[0;34m()[0m
+[0;32m     10 [0;31m    [0mz[0m [0;34m=[0m [0;36m0.[0m[0;34m[0m[0m
+[0m[0;32m     11 [0;31m    [0;32mimport[0m [0mipdb[0m[0;34m;[0m [0mipdb[0m[0;34m.[0m[0mset_trace[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0m
+[0m[0;32m---> 12 [0;31m    [0my[0m [0;34m=[0m [0my[0m[0;34m/[0m[0mz[0m[0
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.36109s
+Time consumed = 0.64663s
 
 ======================================================================
 Inspecting script file scope.py...
@@ -1063,6 +1214,7 @@ Author Wang YuHeng (yuheng.wang18@imperial.ac.uk)"""
 _a_global = 10
 
 def a_function():
+    """ test local and global variable """
     _a_global = 5
     _a_local = 4
     print("Inside the function, the value is ", _a_global)
@@ -1079,6 +1231,7 @@ print("Outside the function, the value is ", _a_global)
 _a_global = 10
 
 def a_function():
+    """ test local and global variable """
     global _a_global
     _a_global = 5
     _a_local = 4
@@ -1099,18 +1252,18 @@ Found one or more doctrings!
 Output (only first 500 characters): 
 
 **********************************************************************
-('Inside the function, the value is ', 5)
-('Inside the function, the value is ', 4)
-('Outside the function, the value is ', 10)
-('Inside the function, the value is ', 5)
-('Inside the function, the value is ', 4)
-('Outside the function, the value is', 5)
+Inside the function, the value is  5
+Inside the function, the value is  4
+Outside the function, the value is  10
+Inside the function, the value is  5
+Inside the function, the value is  4
+Outside the function, the value is 5
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.01597s
+Time consumed = 0.03940s
 
 ======================================================================
 Inspecting script file cfexercises1.py...
@@ -1199,7 +1352,7 @@ hello
 
 Code ran without errors
 
-Time consumed = 0.01509s
+Time consumed = 0.03209s
 
 ======================================================================
 Inspecting script file tuple.py...
@@ -1250,7 +1403,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.01460s
+Time consumed = 0.03678s
 
 ======================================================================
 Inspecting script file basic_io.py...
@@ -1341,13 +1494,13 @@ Second Line
 Third Line
 
 Fourth Line
-{'another key': 11, 'a key': 10}
+{'a key': 10, 'another key': 11}
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.01684s
+Time consumed = 0.03679s
 
 ======================================================================
 Inspecting script file lc1.py...
@@ -1441,7 +1594,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.01515s
+Time consumed = 0.02978s
 
 ======================================================================
 Inspecting script file oaks_debugme.py...
@@ -1543,7 +1696,7 @@ FOUND AN OAK!
 
 Code ran without errors
 
-Time consumed = 0.04549s
+Time consumed = 0.07722s
 
 ======================================================================
 Inspecting script file oaks.py...
@@ -1598,16 +1751,16 @@ Found one or more doctrings!
 Output (only first 500 characters): 
 
 **********************************************************************
-set(['Quercus robur', 'Quercus cerris', 'Quercus petraea'])
-set(['Quercus robur', 'Quercus cerris', 'Quercus petraea'])
-set(['QUERCUS ROBUR', 'QUERCUS CERRIS', 'QUERCUS PETRAEA'])
-set(['QUERCUS ROBUR', 'QUERCUS CERRIS', 'QUERCUS PETRAEA'])
+{'Quercus cerris', 'Quercus robur', 'Quercus petraea'}
+{'Quercus cerris', 'Quercus robur', 'Quercus petraea'}
+{'QUERCUS CERRIS', 'QUERCUS PETRAEA', 'QUERCUS ROBUR'}
+{'QUERCUS CERRIS', 'QUERCUS PETRAEA', 'QUERCUS ROBUR'}
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.01645s
+Time consumed = 0.03604s
 
 ======================================================================
 Inspecting script file loops.py...
@@ -1776,7 +1929,7 @@ GERONIMO! infinite loop! ctrl+c
 
 Code ran without errors
 
-Time consumed = 10.61221s
+Time consumed = 10.28405s
 
 ======================================================================
 Inspecting script file using_name.py...
@@ -1811,7 +1964,7 @@ This program is being run by itself
 
 Code ran without errors
 
-Time consumed = 0.07875s
+Time consumed = 0.09282s
 
 ======================================================================
 Inspecting script file align_seqs.py...
@@ -1845,6 +1998,7 @@ else:
 # A function that computes a score by returning the number of matches starting
 # from arbitrary startpoint (chosen by user)
 def calculate_score(s1, s2, l1, l2, startpoint):
+    """ Align sequence """
     matched = "" # to hold string displaying alignements
     score = 0
     for i in range(l2):
@@ -1896,14 +2050,59 @@ Found one or more doctrings!
 Output (only first 500 characters): 
 
 **********************************************************************
-
+-----*****
+CAATTCGGAT
+ATCGCCGGATTACGGG
+5
+ 
+.------*--*
+.CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+..*---------
+..CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+...--------*-
+...CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+....*---------
+....CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+.....*---*-----
+.....CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+......--***--*--
+......CAATTCGGAT
+ATCGCCGGATTACGGG
+4
+ 
+.......-*-*-***-
+.......CAATTCGGAT
+ATCGCCGGATTACGGG
+5
+ 
+........------**
+........CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+.........--*---*
+.........CAATTCGGAT
+ATCGCCGG
 **********************************************************************
 
-Encountered error:
-  File "align_seqs.py", line 65
-    print(my_best_align+"\n"+s1+"\n"+"Best score:", my_best_score, file=f)
-                                                                       ^
-SyntaxError: invalid syntax
+Code ran without errors
+
+Time consumed = 0.05014s
 
 ======================================================================
 Inspecting script file sysargv.py...
@@ -1929,15 +2128,15 @@ Found one or more doctrings!
 Output (only first 500 characters): 
 
 **********************************************************************
-('This is the name of the script: ', 'sysargv.py')
-('Number of arguments: ', 1)
-('The arguments are: ', "['sysargv.py']")
+This is the name of the script:  sysargv.py
+Number of arguments:  1
+The arguments are:  ['sysargv.py']
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.10159s
+Time consumed = 0.06720s
 
 ======================================================================
 Inspecting script file align_seqs_fasta.py...
@@ -1993,6 +2192,7 @@ else:
 # A function that computes a score by returning the number of matches starting
 # from arbitrary startpoint (chosen by user)
 def calculate_score(s1, s2, l1, l2, startpoint):
+    """ Align sequence """
     matched = "" # to hold string displaying alignements
     score = 0
     for i in range(l2):
@@ -2044,14 +2244,12 @@ Found one or more doctrings!
 Output (only first 500 characters): 
 
 **********************************************************************
-
+............................................................................AAAAAAACAAAAAGATACATATATATGATATATCTGATATATGATATATATATGATATATCTGATATATGATATATATATGATATATCTGATATATGATATATATATGATATATCTGATATATGATATATATATGATATATCTGATATATATACATATGGTATACATGAGATACATCATATGTATATATGGTATACATGAGATACATCATATGTATATATGGTATACATGAGATACATCATATGTATATATGGTATACATGAGATACATCATATGTATACATGAGATACATCATATGTATACATGAGATACATCATATGTATACATGAGATACATCATATGTATACATGAGATACATCATATGTATACATGAGATACATCATATGTATACATGAGATACATCATATGTATACATGAGATACATCA
 **********************************************************************
 
-Encountered error:
-Traceback (most recent call last):
-  File "align_seqs_fasta.py", line 22, in <module>
-    for line in f.readlines():
-ValueError: Mixing iteration and read methods would lose data
+Code ran without errors
+
+Time consumed = 3.74301s
 
 ======================================================================
 Inspecting script file control_flow.py...
@@ -2073,7 +2271,6 @@ __version__ = '0.0.1'
 import sys
 
 def even_or_odd(x=0): # if not specified, x should take value 0.
-
     """Find whether a number x is even or odd."""
     if x % 2 == 0: #The conditional if
         return "%d is Even!" % x
@@ -2115,6 +2312,7 @@ def find_all_primes(x=22):
     return allprimes
 
 def main(argv):
+    """ control flow """
     print(even_or_odd(22))
     print(even_or_odd(33))
     print(largest_divisor_five(120))
@@ -2165,7 +2363,7 @@ True
 
 Code ran without errors
 
-Time consumed = 0.01369s
+Time consumed = 0.03888s
 
 ======================================================================
 Inspecting script file test_control_flow.py...
@@ -2234,19 +2432,19 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.03862s
+Time consumed = 0.11564s
 
 ======================================================================
 ======================================================================
 Finished running scripts
 
-Ran into 4 errors
+Ran into 1 errors
 
 ======================================================================
 ======================================================================
 
 FINISHED WEEKLY ASSESSMENT
 
-Current Points for the Week = 99
+Current Points for the Week = 100
 
 NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!

@@ -9,11 +9,11 @@ Note that:
 
 ======================================================================
 ======================================================================
-Your Git repo size this week is about 1.57 MiB on disk 
+Your Git repo size this week is about 99.61 MiB on disk 
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week1, Assessment, Week2, .git, Week3
+Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week8, Week5, Week2, Week9, Week4, .git, Week3, Project
 
 Found the following files in parent directory: README.txt, .gitignore
 
@@ -382,7 +382,9 @@ rsconnect/
 /*_files/
 
 
-# End of https://www.gitignore.io/api/r**********************************************************************
+# End of https://www.gitignore.io/api/r
+
+**********************************************************************
 
 Found README in parent directory, named: README.txt
 
@@ -442,12 +444,50 @@ Rscript get_TreeHeight.R
 R 3.5.1, python 3.7.0
 
 #4 Version
-1.20 , the third version.**********************************************************************
+1.20 , the third version.
+
+##############
+update in Week7
+#############
+
+#1 content 
+The week7's assignment, containing all week7's script and data file and result. And part of miniproject.
+
+#2 Example usage
+python3 TestR.py
+
+#3 Environment
+R 3.5.1, python 3.7.0
+
+#4 Version
+1.30 , the fourth version.
+
+##############
+update in Week10
+#############
+
+#1 content (This is the last version of coursework except miniproject and HPC exercises)
+
+1. add project proposal
+
+2. add one extra credit problem in week7
+
+3. move things in week4,5 to this repository
+
+4. add mini project to this repository
+
+5. add HPC exercises to this repository
+
+#2 Environment
+R 3.5.1, python 3.7.0, QGIS 3.41
+
+#3 Version
+1.40 , the fifth version.**********************************************************************
 
 ======================================================================
 Looking for the weekly directories...
 
-Found 3 weekly directories: Week1, Week2, Week3
+Found 9 weekly directories: Week1, Week2, Week3, Week4, Week5, Week6, Week7, Week8, Week9
 
 The Week3 directory will be assessed 
 
@@ -664,7 +704,7 @@ debug: browser()
 
 Code ran without errors
 
-Time consumed = 0.13867s
+Time consumed = 0.25031s
 
 ======================================================================
 Inspecting script file PP_Regress.R...
@@ -820,6 +860,7 @@ Author Wang YuHeng (yuheng.wang18@imperial.ac.uk)"""
 import math
 import numpy
 def stochrick(p0 = numpy.random.uniform(0.5,1.5,size=1000),r=1.2,K=1,sigma=0.2,numyears=100):
+    """ Test vectorization """
     N = numpy.empty((numyears,len(p0)))
     N[1,] = p0
     for pop in range(1,len(p0)):
@@ -831,6 +872,7 @@ def stochrick(p0 = numpy.random.uniform(0.5,1.5,size=1000),r=1.2,K=1,sigma=0.2,n
 import math
 import numpy
 def stochrickvect(p0 = numpy.random.uniform(0.5,1.5,size=1000),r=1.2,K=1,sigma=0.2,numyears=100):
+    """ test vectorization """
     N = numpy.empty((numyears,len(p0)))
     N[1,] = p0
     for yr in range(2,numyears):
@@ -854,7 +896,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.06072s
+Time consumed = 0.24636s
 
 ======================================================================
 Inspecting script file apply1.R...
@@ -883,18 +925,18 @@ Testing apply1.R...
 Output (only first 500 characters): 
 
 **********************************************************************
- [1]  0.14280460 -0.10079020  0.26688145 -0.24867982 -0.17984880 -0.15617904
- [7]  0.46794614  0.43639633 -0.39247079  0.04577173
- [1] 0.5362741 1.3681965 0.8872320 0.6330813 2.0347429 1.5699058 0.6784935
- [8] 1.2455486 1.0801973 1.0230835
- [1] -0.65249798  0.06159871  0.22217779  0.41409965  0.31250202  0.31997327
- [7] -0.14168981 -0.04933855 -0.16507092 -0.03992259
+ [1] -0.435044852 -0.127373775  0.035747430  0.154938146 -0.301957938
+ [6]  0.043161017 -0.260054219 -0.255950111  0.199111530  0.002876332
+ [1] 2.0912002 1.0230948 0.4911254 1.6075477 1.2589211 1.0811070 2.4554633
+ [8] 1.8172367 0.9216235 0.6752543
+ [1]  0.09808935 -0.11655860 -0.37335614 -0.47524946 -0.23872555  0.72989122
+ [7] -0.01137406  0.51827752 -0.17628060 -0.89926013
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.07366s
+Time consumed = 0.06955s
 
 ======================================================================
 Inspecting script file sample.R...
@@ -931,22 +973,21 @@ Testing sample.R...
 Output (only first 500 characters): 
 
 **********************************************************************
-[1] "Mean of this sample was: -0.237884515545356"
-[1] "Mean of this sample was: -0.120444898730438"
-[1] "Mean of this sample was: -0.106700361411845"
-[1] "Mean of this sample was: 0.00481468447266142"
-[1] "Mean of this sample was: -0.221231902718427"
-[1] "Mean of this sample was: -0.242877019505779"
-[1] "Mean of this sample was: -0.131298571908905"
-[1] "Mean of this sample was: 0.0019411757872526"
-[1] "Mean of this sample was: -0.311001830308085"
-[1] "Mean of this sample was: -0.241862443558256"
-
+[1] "Mean of this sample was: -0.196238402413822"
+[1] "Mean of this sample was: -0.135339777448457"
+[1] "Mean of this sample was: -0.216418206542052"
+[1] "Mean of this sample was: -0.0607299840971679"
+[1] "Mean of this sample was: -0.0958076269627381"
+[1] "Mean of this sample was: -0.312243509089377"
+[1] "Mean of this sample was: -0.156507868556441"
+[1] "Mean of this sample was: 0.0532929931705317"
+[1] "Mean of this sample was: -0.156678510373523"
+[1] "Mean of this sample was: -0.437488730990606"
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.11691s
+Time consumed = 0.10482s
 
 ======================================================================
 Inspecting script file run_get_TreeHeight.sh...
@@ -989,7 +1030,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.14265s
+Time consumed = 0.13731s
 
 ======================================================================
 Inspecting script file get_TreeHeight.py...
@@ -1018,6 +1059,7 @@ import os
 
 # define the function to calculating the tree height
 def TreeHeight(degrees, distance):
+    """ calculate tree height """
     radians = degrees * math.pi / 180
     height = distance * math.tan(radians)
     print("Tree height is:", height)
@@ -1060,7 +1102,7 @@ Output (only first 500 characters):
 
 Encountered error:
 Traceback (most recent call last):
-  File "get_TreeHeight.py", line 33, in <module>
+  File "get_TreeHeight.py", line 34, in <module>
     with open(args[0],"r") as f:
 IndexError: list index out of range
 
@@ -1111,8 +1153,6 @@ rm: cannot remove '*.out': No such file or directory
 rm: cannot remove '*.snm': No such file or directory
 rm: cannot remove '*.toc': No such file or directory
 
-(evince:15050): Gtk-WARNING **: gtk_widget_size_allocate(): attempt to allocate widget with width -81 and height 20
-
 ======================================================================
 Inspecting script file boilerplate.R...
 
@@ -1148,7 +1188,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.12114s
+Time consumed = 0.17732s
 
 ======================================================================
 Inspecting script file TreeHeight.R...
@@ -1211,7 +1251,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.11267s
+Time consumed = 0.20646s
 
 ======================================================================
 Inspecting script file PP_Lattice.R...
@@ -1341,7 +1381,7 @@ null device
 
 Code ran without errors
 
-Time consumed = 1.00067s
+Time consumed = 1.04257s
 
 ======================================================================
 Inspecting script file next.R...
@@ -1369,7 +1409,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.08522s
+Time consumed = 0.08659s
 
 ======================================================================
 Inspecting script file Girko.R...
@@ -1446,7 +1486,7 @@ Output (only first 500 characters):
 
 **********************************************************************
    user  system elapsed 
-  0.084   0.004   0.088 
+  0.108   0.000   0.108 
    user  system elapsed 
   0.000   0.000   0.001 
 
@@ -1454,7 +1494,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.22727s
+Time consumed = 0.26360s
 
 ======================================================================
 Inspecting script file time_compare.sh...
@@ -1467,15 +1507,19 @@ File contents are:
 # Argument: none
 
 #calculate the time of Vectorize1.R
+echo "the time of Vectorize1.R"
 time Rscript Vectorize1.R
 
 #calculate the time of Vectorize1.py
+echo "the time of Vectorize1.py"
 time python3 Vectorize1.py
 
 #calculate the time of Vectorize2.R
+echo "the time of Vectorize2.R"
 time Rscript Vectorize2.R
 
 #calculate the time of Vectorize2.py
+echo "the time of Vectorize2.py"
 time python3 Vectorize2.py
 
 **********************************************************************
@@ -1485,33 +1529,37 @@ Testing time_compare.sh...
 Output (only first 500 characters): 
 
 **********************************************************************
+the time of Vectorize1.R
    user  system elapsed 
-   0.08    0.00    0.08 
+  0.100   0.000   0.099 
    user  system elapsed 
-  0.000   0.000   0.001 
+  0.000   0.004   0.001 
+the time of Vectorize1.py
+the time of Vectorize2.R
 [1] "Vectorized Stochastic Ricker takes:"
    user  system elapsed 
-  0.044   0.000   0.046 
+  0.040   0.004   0.044 
+the time of Vectorize2.py
 
 **********************************************************************
 
 Encountered error:
 
-real	0m0.216s
-user	0m0.180s
-sys	0m0.028s
+real	0m0.268s
+user	0m0.244s
+sys	0m0.016s
 
-real	0m0.236s
+real	0m0.155s
 user	0m0.200s
-sys	0m0.244s
+sys	0m0.236s
 
-real	0m0.112s
-user	0m0.092s
-sys	0m0.012s
+real	0m0.119s
+user	0m0.096s
+sys	0m0.016s
 
-real	0m0.144s
-user	0m0.196s
-sys	0m0.224s
+real	0m0.140s
+user	0m0.204s
+sys	0m0.228s
 
 ======================================================================
 Inspecting script file break.R...
@@ -1559,7 +1607,7 @@ i equals  19
 
 Code ran without errors
 
-Time consumed = 0.09076s
+Time consumed = 0.11139s
 
 ======================================================================
 Inspecting script file basic_io.R...
@@ -1623,7 +1671,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 1.84899s
+Time consumed = 1.99864s
 
 ======================================================================
 Inspecting script file Vectorize1.py...
@@ -1638,6 +1686,7 @@ import numpy
 import time
 M = numpy.random.uniform(0,1,size=[1000,1000])
 def SumALLElements(M):
+    """ test vectorization """
     ToT =0
     for i in range(0,M.shape[0]):
         for j in range(0,M.shape[1]):
@@ -1662,7 +1711,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.06005s
+Time consumed = 0.20179s
 
 ======================================================================
 Inspecting script file try.R...
@@ -1696,20 +1745,27 @@ Testing try.R...
 Output (only first 500 characters): 
 
 **********************************************************************
-[1] "Mean of this sample was: 0.156682767369268"
-[1] "Mean of this sample was: -0.0168812146913143"
-[1] "Mean of this sample was: 0.200888480759834"
-[1] "Mean of this sample was: -0.133726788463825"
-[1] "Mean of this sample was: -0.00471429505062017"
-[1] "Mean of this sample was: 0.0679770267586242"
-[1] "Mean of this sample was: -0.0478276366280166"
-[1] "Mean of this sample was: -0.100485129684683"
-[1] "Mean of this sample was: -0.164233572509901"
-[1] "Mean of this sample was: 0.210647083312228"
-
+[1] "Mean of this sample was: -0.277533243042582"
+[1] "Mean of this sample was: -0.325628505080143"
+[1] "Mean of this sample was: -0.426879256882044"
+[1] "Mean of this sample was: -0.185150319667602"
+[1] "Mean of this sample was: -0.172167265427744"
+[1] "Mean of this sample was: -0.164260186632721"
+[1] "Mean of this sample was: -0.322287513342586"
+[1] "Mean of this sample was: -0.064080314789204"
+[1] "Mean of this sample was: -0.18561131319618"
+[1] "Mean of this sample was: -0.0137547563606326"
+[
 **********************************************************************
 
 Encountered error:
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
 Error in doit(x) : Couldn't calculate mean: too few unique points!
 Error in doit(x) : Couldn't calculate mean: too few unique points!
 Error in doit(x) : Couldn't calculate mean: too few unique points!
@@ -1774,18 +1830,18 @@ Testing apply2.R...
 Output (only first 500 characters): 
 
 **********************************************************************
-             [,1]       [,2]        [,3]       [,4]        [,5]       [,6]
- [1,]  112.515577   85.23126  0.21231823  126.62224 -0.85164835 -0.8479525
- [2,]   80.436259   62.21262 -0.43300163   98.84244 -0.07935809 -1.8959913
- [3,]   26.875584   41.99955  0.33174026  -68.47720 -1.35113304 -0.2689864
- [4,]  154.408580   66.02149 -1.15675302  -77.73129  1.01687165  1.2533659
- [5,]  -38.625640   89.01083 -0.88643034  -83.66155 -0.41637292  1.5794138
- [6,]   28.749697  -78.91845 -0.46712502   30.90546
+            [,1]        [,2]        [,3]        [,4]       [,5]        [,6]
+ [1,]  1.1996915   23.237529  0.58831642  1.37106469  0.1377062    5.949924
+ [2,]  0.7909347   -1.050041  0.15692779  0.51839201 -0.3676378   -6.551060
+ [3,] -1.7745571   25.929926  1.05291756 -0.55225024 -0.4220292 -248.737607
+ [4,] -0.7710274  170.739777  0.12417550 -0.52030695 -0.3811200  134.029891
+ [5,] -2.4044394   13.509202  0.03676465 -0.01762631  1.1567559  -61.347032
+ [6,] -0.2818130   24.979694 -2.94888672 -0.4
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.09114s
+Time consumed = 0.09673s
 
 ======================================================================
 Inspecting script file get_TreeHeight.R...
@@ -1951,13 +2007,13 @@ Output (only first 500 characters):
 **********************************************************************
 [1] "Vectorized Stochastic Ricker takes:"
    user  system elapsed 
-  0.044   0.000   0.043 
+  0.044   0.004   0.047 
 
 **********************************************************************
 
 Code ran without errors
 
-Time consumed = 0.12869s
+Time consumed = 0.12988s
 
 ======================================================================
 Inspecting script file DataWrangTidy.R...
@@ -2052,7 +2108,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 10.00374s
+Time consumed = 10.00418s
 
 ======================================================================
 Inspecting script file TAutoCorr.tex...
@@ -2161,7 +2217,7 @@ Output (only first 500 characters):
 
 Code ran without errors
 
-Time consumed = 0.09404s
+Time consumed = 0.10112s
 
 ======================================================================
 ======================================================================
