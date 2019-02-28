@@ -9,11 +9,11 @@ Note that:
 
 ======================================================================
 ======================================================================
-Your Git repo size this week is about 1.57 MiB on disk 
+Your Git repo size this week is about 99.61 MiB on disk 
 
 PART 1: Checking project workflow...
 
-Found the following directories in parent directory: Week1, Assessment, .git
+Found the following directories in parent directory: Week6, Week1, Week7, Assessment, Week8, Week5, Week2, Week9, Week4, .git, Week3, Project
 
 Found the following files in parent directory: README.txt, .gitignore
 
@@ -333,6 +333,57 @@ TSWLatexianTemp*
 # End of https://www.gitignore.io/api/latex
 
 
+
+
+
+
+# Created by https://www.gitignore.io/api/r
+
+### R ###
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+/*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
+rsconnect/
+
+### R.Bookdown Stack ###
+# R package: bookdown caching files
+/*_files/
+
+
+# End of https://www.gitignore.io/api/r
+
 **********************************************************************
 
 Found README in parent directory, named: README.txt
@@ -342,7 +393,8 @@ Printing contents of README.txt:
 My CMEE Coursework Repository
 
 #1 Content
-The Week1 home work, containing all week1 script and data file.
+The Week1 homework, containing all week1 script and data file.
+
 
 #2 Installation
 Don't need installation.
@@ -361,12 +413,81 @@ Run under linux or macos
 #6 Author information
 Wang YuHeng 
 yuheng.wang18.imperial.ac.uk
-**********************************************************************
+
+##############
+update in Week2
+#############
+
+#1 content
+The Week2's homework, containing all week2 script and data file and result.
+
+#2 Example usage
+python3 align_seqs_better.py
+
+#3 Environment
+Run under linux or macos
+
+#4 Version
+1.10 , second version 
+
+##############
+update in Week3
+#############
+
+#1 content
+The Week3's homework, containing all week3's script and data file and result.
+
+#2 Example usage
+Rscript get_TreeHeight.R
+
+#3 Environment
+R 3.5.1, python 3.7.0
+
+#4 Version
+1.20 , the third version.
+
+##############
+update in Week7
+#############
+
+#1 content 
+The week7's assignment, containing all week7's script and data file and result. And part of miniproject.
+
+#2 Example usage
+python3 TestR.py
+
+#3 Environment
+R 3.5.1, python 3.7.0
+
+#4 Version
+1.30 , the fourth version.
+
+##############
+update in Week10
+#############
+
+#1 content (This is the last version of coursework except miniproject and HPC exercises)
+
+1. add project proposal
+
+2. add one extra credit problem in week7
+
+3. move things in week4,5 to this repository
+
+4. add mini project to this repository
+
+5. add HPC exercises to this repository
+
+#2 Environment
+R 3.5.1, python 3.7.0, QGIS 3.41
+
+#3 Version
+1.40 , the fifth version.**********************************************************************
 
 ======================================================================
 Looking for the weekly directories...
 
-Found 1 weekly directories: Week1
+Found 9 weekly directories: Week1, Week2, Week3, Week4, Week5, Week6, Week7, Week8, Week9
 
 The Week1 directory will be assessed 
 
@@ -446,7 +567,8 @@ Argument: MyVar-> string inputed; a,b-> number inputed; mysun-> number of adding
 **********************************************************************
 
 Found following files in results directory: README.txt...
-Found 13 code files: ConcatenateTwoFiles.sh, Firstbiblio.bib, .txt, CountLines.sh, variables.sh, CompileLaTeX.sh, tiff2png.sh, csvtospace.sh, FirstExample.tex, MyExampleScript.sh, UnixPrac1.txt, tabtocsv.sh, boilerplate.sh
+
+Found 12 code files: ConcatenateTwoFiles.sh, Firstbiblio.bib, CountLines.sh, variables.sh, CompileLaTeX.sh, tiff2png.sh, csvtospace.sh, FirstExample.tex, MyExampleScript.sh, UnixPrac1.txt, tabtocsv.sh, boilerplate.sh
 
 Found the following extra files: FirstExample.pdf
 0.5 pt deducted per extra file
@@ -500,15 +622,6 @@ File contents are:
 }**********************************************************************
 
 Testing Firstbiblio.bib...
-
-======================================================================
-Inspecting script file .txt...
-
-File contents are:
-**********************************************************************
-**********************************************************************
-
-Testing .txt...
 
 ======================================================================
 Inspecting script file CountLines.sh...
@@ -590,7 +703,7 @@ File contents are:
 # Desc: compile the latex file
 # Argument: 1->compiled file
 # Date: Oct 2018 
-#!/bin/bash
+
 pdflatex $1.tex
 pdflatex $1.tex
 bibtex $1
@@ -645,29 +758,29 @@ rm: cannot remove '*.toc': No such file or directory
 rm: cannot remove '*.bbl': No such file or directory
 rm: cannot remove '*.blg': No such file or directory
 
-** (evince:28119): WARNING **: Error when getting information for file '/home/mhasoba/Documents/Teaching/IC_CMEE/2018-19/Coursework/StudentRepos/YuhengWang_YW918/Week1/Code/.pdf': No such file or directory
+** (evince:17045): WARNING **: Error when getting information for file '/home/mhasoba/Documents/Teaching/IC_CMEE/2018-19/Coursework/StudentRepos/YuhengWang_YW918/Week1/Code/.pdf': No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
-** (evince:28119): WARNING **: Error setting file metadata: No such file or directory
+** (evince:17045): WARNING **: Error setting file metadata: No such file or directory
 
 ======================================================================
 Inspecting script file tiff2png.sh...
@@ -731,7 +844,7 @@ Done!
 
 Code ran without errors
 
-Time consumed = 0.00837s
+Time consumed = 0.00801s
 
 ======================================================================
 Inspecting script file FirstExample.tex...
@@ -796,7 +909,7 @@ Hello mhasoba
 
 Code ran without errors
 
-Time consumed = 0.00745s
+Time consumed = 0.00526s
 
 ======================================================================
 Inspecting script file UnixPrac1.txt...
@@ -846,7 +959,7 @@ Done!
 
 Code ran without errors
 
-Time consumed = 0.01229s
+Time consumed = 0.00576s
 
 ======================================================================
 Inspecting script file boilerplate.sh...
@@ -874,7 +987,7 @@ This is a shell script
 
 Code ran without errors
 
-Time consumed = 0.01117s
+Time consumed = 0.00363s
 
 ======================================================================
 ======================================================================
