@@ -14,7 +14,7 @@ from gplearn import genetic
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 import sys
-from IPython.display import Image
+#from IPython.display import Image
 import pydotplus
 
 # load file

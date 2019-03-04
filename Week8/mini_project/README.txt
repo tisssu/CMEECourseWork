@@ -8,21 +8,20 @@ This dectory contains code, data and results of mini-project
 python 3.56
 packages need install: 
 
-scikit-learn;
-gplearn;
-IPython;
-pydotplus;
-scipy;
-numpy;
-csv;
-matplotlib;
-sys
+scikit-learn: to do some maching learning process like randomforest;
+gplearn: used to do symbolic regression;
+pydotplus: used to draw the syntax tree;
+scipy: used to do some mathematical process;
+numpy: used to do some mathematical process;
+csv: used to process csv input and output;
+matplotlib: used to draw the 3D model fitting plot;
+sys: used to output the log data into csv file
 
 
 R 3.51
 packages need install:
-reshape2;
-ggplot2
+reshape2: to reformalized the result table for plot use;
+ggplot2: to draw plots more clearly
 ##################
 
 
@@ -48,13 +47,11 @@ function: comlile the file to pdf and delete the files which are not needed.
 
 name: run_Miniproject.sh
 function: run the whole workflow for miniproject.
-
-Notice: if you run this script under the environmet of anaconda, you need to change "python3 symbolic_regression.py" to "python symbolic_regression.py" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #############################
 
 ####################
 #5 Version
-1.00 , first version 
+1.00, first version 
 ######################
 
 
